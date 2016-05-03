@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id = "@+id/mainlayout"
+    android:orientation="vertical"
+    tools:context="fukai.batterywatch.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="やること"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editText"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:hint="aaaaa"/>
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="セット"
+        android:id="@+id/set"
+        android:layout_below="@+id/timePicker"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解除"
+        android:id="@+id/cancel"
+        android:layout_alignBottom="@+id/set"
+        android:layout_alignEnd="@+id/timePicker"
+        android:layout_marginEnd="42dp"/>
+
+</LinearLayout>
